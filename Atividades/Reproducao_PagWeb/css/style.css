@@ -1,0 +1,73 @@
+/* Reset básico (mesma ideia que o professor ensinou) */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Cor de fundo personalizada para bater com o layout da atividade */
+.bg-azul-escuro{
+    background-color: #0b192c;
+}
+
+/* Ajuste na cor azul do botão principal */
+.btn-primary{
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* ===== Seção Início (carrossel) =====
+   Obs: o Bootstrap já cuida do menu (navbar), então aqui só
+   ajustamos o fundo e o texto do carrossel. */
+.hero-slide{
+    min-height: 480px;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: #0b192c;
+}
+.hero-slide h2{
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.hero-slide p{
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.titulo-secao{
+    position: relative;
+    padding-bottom: 15px;
+}
+.titulo-secao::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #0d6efd;
+    margin: 10px auto 0;
+}
+
+.icone-curso{
+    font-size: 3rem;
+}
+
+.text-roxo{
+    color: #6f42c1;
+}
+.btn-outline-roxo{
+    color: #6f42c1;
+    border: 1px solid #6f42c1;
+    background-color: transparent;
+}
+.btn-outline-roxo:hover{
+    color: #fff;
+    background-color: #6f42c1;
+}
