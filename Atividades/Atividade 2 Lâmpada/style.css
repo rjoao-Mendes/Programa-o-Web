@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.lampada {
+    background-color: white;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.lampada h1 {
+    margin-bottom: 25px;
+}
+
+.lampada img {
+    width: 180px;
+    height: auto;
+}
+
+.lampada h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.lampada button {
+    margin: 5px;
+}
