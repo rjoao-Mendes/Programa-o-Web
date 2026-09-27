@@ -8,18 +8,18 @@ function insertionSort() {
         let valor = vetor[i];
         let j = i - 1;
 
-        while (j >= 0) {
+        while (j >= 0 && vetor[j] > valor) {
             comparacoes++;
 
-            if (vetor[j] > valor) {
-                vetor[j + 1] = vetor[j];
+            vetor[j + 1] = vetor[j];
 
-                movimentacoes++;
-                j--;
-            } else {
-                break;
-            }
+            movimentacoes++;
+            j--;
         }
+        if (j >= 0) {
+            comparacoes++;
+        }
+
         vetor[j + 1] = valor;
     }
 
@@ -28,6 +28,6 @@ function insertionSort() {
     console.log("Comparações:", comparacoes);
     console.log("Movimentações:", movimentacoes);
 }
-let vetor = [...vetorOriginal];
+let vetor = [8, 3, 5, 1, 9, 6, 2, 7, 4];
 
 insertionSort(vetor);
