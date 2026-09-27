@@ -28,5 +28,5 @@ function selectionSort() {
     console.log("Trocas:", trocas);
 }
 
-let vetor = [...vetorOriginal];
+let vetor = [8, 3, 5, 1, 9, 6, 2, 7, 4];
 selectionSort(vetor);
